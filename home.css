@@ -1,0 +1,714 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+a{
+  color: inherit;
+}
+.body {
+  width: 1240px;
+  margin: auto;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+
+}
+
+/* Start menu  */
+.container .menu-left {
+  box-sizing: border-box;
+  background-color: white;
+  width: 244px;
+  height: 543px;
+  border: 1px solid rgb(214, 214, 214);
+}
+
+.menu-left>li:hover {
+  background-color: #189eff;
+
+}
+
+.container .menu-left {
+  position: relative;
+}
+
+.container .menu-left>li {
+  line-height: 33.9375px;
+  height: 33.9375px;
+}
+ .container .menu-left>li>span {
+   width: 30px;
+   color: rgb(68, 68, 68);
+ }
+.container .menu-left li:hover a span {
+  color: #fff;
+}
+.container .menu-left li:hover a span .menu-cellphone {
+  background-position: -392px -75px;
+}
+
+.container .menu-left>li>a {
+  position: relative;
+  display: block;
+  display: flex;
+  height: 33.9375px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.container .menu-left>li:hover>a::before {
+  position: absolute;
+  top: 0px;
+  left: 242px;
+  content: '';
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #189eff;
+  opacity: .9;
+  z-index: 2;
+}
+
+.container .menu-left>li>div {
+  display: none;
+}
+
+.container .menu-left>li:hover>div {
+  display: unset;
+  z-index: 1
+}
+.container-menu-hover {
+  position: absolute;
+  top: -1px;
+  bottom: 0px;
+  left: 100%;
+  box-sizing: border-box;
+  padding: 20px 14px 20px 14px;
+  background-color: white;
+  width: 996px;
+  height: 543px;
+  border: 1px solid rgb(214, 214, 214);
+}
+
+.menu-hover {
+  display: flex;
+}
+
+.menu-hover li {
+  flex: 25%;
+}
+
+.menu-hover li span {
+  width: 100%;
+  display: block;
+  line-height: 22px;
+}
+
+.menu-hover li span:nth-child(1) {
+  font-weight: bold;
+}
+
+.menu-hover li span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-hover li span:nth-child(1) {
+  font-size: 13px;
+}
+
+.menu-hover li span a {
+  font-size: 13px;
+}
+
+
+.icon-wrap {
+  display: flex;
+  width: 39px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: calc(100% - 39px);
+}
+
+.menu-cellphone {
+  background-image: url("https://frontend.tikicdn.com/_desktop-next/static/img/sprite@2x.png?v=100000000");
+  background-size: 404px 383px;
+  background-position: -392px -52px;
+  width: 11px;
+  height: 18px;
+  display: inline-block;
+
+}
+
+ul {
+  list-style: none;
+
+}
+
+/* End menu  */
+
+/* Start container-banner */
+.container-banner {
+  width: calc(100% - 244px);
+  height: 543px;
+  display: flex;
+
+}
+
+/* Start banner left */
+.banner-left {
+  width: 584px;
+}
+
+.banner-left .banner-left-top {
+  width: 100%;
+  height: 362px;
+  position: relative;
+  cursor: pointer;
+}
+/* Start SlideShow */
+  .mySlides {
+    display: none
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .slideshow-container {
+    position: relative;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .container-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #9f9c75;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 2px solid #9f9c75;
+    
+  }
+
+  .active,
+  .dot:hover {
+    background-color: rgb(226, 222, 222);
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next {
+      font-size: 11px
+    }
+  }
+/* End SlideShow */
+.banner-left-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner-left-bottom-left {
+  width: 50%;
+  height: 181px;
+}
+
+.banner-left-bottom-right {
+  width: 50%;
+  height: 181px;
+}
+
+/* End banner left */
+
+/* Start banner right */
+.banner-right {
+  width: 412px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner-right div {
+  width: 50%;
+  height: 181px;
+}
+
+.banner-right div a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.banner-right div a div {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-right div a div img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Start container-banner-2 */
+.container-banner-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 15px;
+
+}
+
+.container-banner-2 div {
+  width: 295px;
+}
+
+.container-banner-2 div a {
+  width: 100%;
+  display: inline-block;
+}
+
+.container-banner-2 div a img {
+  width: 100%;
+  height: 150px;
+}
+
+.contaier-saw {
+  margin-top: 30px;
+}
+
+.contaier-saw h4 {
+  font-size: 25px;
+}
+
+.contaier-saw-1 {
+  background-color: white;
+}
+
+.contaier-saw-item {
+  margin-top: 15px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.contaier-saw-item .items {
+  padding: 16px;
+  width: 20%;
+  text-decoration: none;
+}
+
+.contaier-saw-item .items:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),
+    0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.contaier-saw-item .items .size-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 12px;
+}
+
+.contaier-saw-item .items .size-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.contaier-saw-item .items p {
+  padding-top: 8px;
+}
+
+.contaier-saw-item .items p .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contaier-saw-item .items .orig-price {
+  text-decoration: line-through;
+  font-weight: 50;
+}
+
+.contaier-saw-item .items .status {
+  color: rgb(243, 100, 95);
+}
+
+.container-more {
+  text-align: center;
+  margin: auto;
+}
+
+.more {
+  display: inline-block;
+  padding: 5px 60px 5px 58px;
+  border: 1px solid #37abff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #37abff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.more:hover {
+  background-color: #37abff;
+  color: white;
+}
+/* Start Tiki deal */
+.container-deal{
+  margin-top: 40px;
+  background-color: white;
+}
+.container-deal .header{
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid rgb(241, 240, 240);
+}
+.container-deal .icon-deal{
+  background-image: url('https://frontend.tikicdn.com/_desktop-next/static/img/sprite@2x.png?v=100000000');
+  background-size: 404px 383px;
+  background-position: -95px 0px;
+  width: 48px;
+  height: 48px;
+}
+.container-deal .header>div{
+  margin-left: 6px;
+}
+.container-deal .header > div > p{
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+}
+.wrap-deal-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap-deal-items .deal-item{
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  padding: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.wrap-deal-items .deal-item:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),
+0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.wrap-deal-items .deal-item>div:nth-child(1) {
+  margin: auto;
+  width:200px;
+  height:200px;
+  margin-bottom: 12px;
+}
+.wrap-deal-items .deal-item>div:nth-child(1)::before{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  content: '';
+  border-bottom: 12px solid red;
+  border-left: 21px solid red;
+  border-right: 21px solid red;
+  border-top: 12px solid red;
+  opacity: .9;
+
+  box-sizing: border-box;
+}
+.wrap-deal-items .deal-item>div:nth-child(1)::after{
+   position: absolute;
+   top: 40px;
+   left: 16px;
+   content: '';
+   border-left: 21px solid transparent;
+   border-right: 21px solid transparent;
+   border-top: 15px solid red;
+   opacity: .9;
+
+}
+.wrap-deal-items .deal-item>div:nth-child(1)>img {
+  width: 100%;
+  height: 100%;
+}
+.wrap-deal-items .deal-item .price .percent{
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top:23px;
+  left: 21px;
+  font-size: 15px;
+}
+.wrap-deal-items .deal-item .title{
+  color: #797878;
+  font-size: 13px;
+}
+.wrap-deal-items .deal-item .price{
+  padding-top: 8px;
+  font-size:16px;
+  font-weight: 500;
+}
+.wrap-deal-items .deal-item .price .percent{
+  font-weight: bold;
+}
+.wrap-deal-items .deal-item .price .original{
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 8px;
+  color: rgb(120, 120, 120);
+}
+.process{
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-evenly;
+}
+.bar{
+  width: 116px;
+  background-color: rgb(253, 218, 200);
+  height: 18px;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.bar .percent{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: #fd752e;
+}
+.bar .content{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bar .content .text{
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  line-height: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.countdown{
+  margin-left: 10px ;
+  display: block;
+  width: 90px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer{
+  text-align: center;
+}
+.footer .button{
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #24a3ff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 7px 16px 7px 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #24a3ff;
+}
+.footer .button:hover{
+  background-color: #24a3ff;
+  color: white;
+}
+/* End Tiki deal */
+
+/* Start ngần hàng quan tâm */
+.container-all {
+  width: 1240px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container-all>.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-list-slide {
+  position: relative;
+  width: 1260px;
+  height: 180px;
+  margin: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  /* overflow        : hidden; */
+}
+
+.list-slide {
+  width: 4200px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.list-slide>.item {
+  width: 210px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.list-slide>.item>.inside-item {
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.list-slide>.item>.inside-item>a {
+  /* width: 190px; */
+  display: block;
+  height: 100%;
+  padding: 16px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 4px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.list-slide>.item>.inside-item>a>div {
+  width: 96px;
+  height: 96px;
+  margin: auto;
+}
+
+.list-slide>.item>.inside-item>a>div>img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.list-slide>.item>.inside-item>a>p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: initial;
+
+}
+
+#prev-btn {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev-btn>i {
+  line-height: 20px;
+  width: 20px;
+}
+
+#next-btn {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+#next-btn>i {
+  line-height: 20px;
+  width: 20px;
+}
+/* End ngần hàng quan tâm */

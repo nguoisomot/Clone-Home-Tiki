@@ -1,0 +1,116 @@
+body {
+  padding         : 0;
+  margin          : 0;
+  box-sizing      : border-box;
+  background-color: rgb(240, 237, 237);
+}
+.container-all{
+  width: 1240px;
+  margin: auto;
+  overflow : hidden;
+  margin-top: 40px;
+}
+.container-all>.title{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-list-slide {
+  position        : relative;
+  width           : 1260px;
+  height          : 180px;
+  background-color: rgb(240, 237, 237);
+  margin          : auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  /* overflow        : hidden; */
+}
+
+.list-slide {
+  width  : 4200px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.list-slide>.item {
+  width        : 210px;
+  height       : 180px;
+  border-radius: 5px;
+}
+
+.list-slide>.item>.inside-item {
+  height       : 100%;
+  padding      : 10px;
+  box-sizing   : border-box;
+  border-radius: 5px;
+}
+
+.list-slide>.item>.inside-item>a {
+  /* width: 190px; */
+  display         : block;
+  height          : 100%;
+  padding         : 16px;
+  text-decoration : none;
+  background-color: white;
+  border-radius   : 4px;
+  line-height     : 20px;
+  box-sizing      : border-box;
+}
+
+.list-slide>.item>.inside-item>a>div {
+  width : 96px;
+  height: 96px;
+  margin: auto;
+}
+
+.list-slide>.item>.inside-item>a>div>img {
+  width : 100%;
+  height: 100%;
+
+}
+
+.list-slide>.item>.inside-item>a>p {
+  margin-top: 20px;
+  text-align: center;
+  font-size : 13px;
+  color     : initial;
+
+}
+
+#prev-btn {
+  display      : inline-block;
+  border       : 1px solid black;
+  border-radius: 50%;
+  font-size    : 13px;
+  position     : absolute;
+  top          : 50%;
+  left         : 10px;
+  transform    : translateY(-50%);
+  text-align   : center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev-btn>i {
+  line-height: 20px;
+  width      : 20px;
+}
+
+#next-btn {
+  display      : inline-block;
+  border       : 1px solid black;
+  border-radius: 50%;
+  font-size    : 13px;
+  position     : absolute;
+  top          : 50%;
+  right        : 10px;
+  transform    : translateY(-50%);
+  text-align   : center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#next-btn>i {
+  line-height: 20px;
+  width      : 20px;
+}
